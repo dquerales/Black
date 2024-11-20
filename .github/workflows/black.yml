@@ -23,8 +23,8 @@ jobs:
 
       - name: execute py script 
         run: |
-          isort quash
-          black quash
+          isort src
+          black src
           pdoc --html src --output-dir docs --force --skip-errors
 
       - name: "✏️ Generate release changelog"
